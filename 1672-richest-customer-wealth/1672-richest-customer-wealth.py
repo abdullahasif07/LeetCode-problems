@@ -7,10 +7,10 @@ class Solution:
             return sum(accounts[0])
         
         for i in range(len(accounts)):
-            if s>=max_sum:
-                max_sum=s
-            s=0
-            for j in range(len(accounts[i])):
-                s+=accounts[i][j]
+           s=0
+           s=sum(accounts[i])
+           if s>=max_sum:
+            max_sum=s
+              
         return max_sum       
         
